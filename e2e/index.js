@@ -1,9 +1,5 @@
 const { insert, truncate, find, deleteRecords, update } = require("./db");
 
-/// <reference types="cypress" />
-/**
- * @type {Cypress.PluginConfig}
- */
 module.exports = (on, config) => {
   on("task", {
     "db:truncate"(models) {
